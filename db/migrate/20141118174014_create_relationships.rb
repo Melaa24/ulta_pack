@@ -8,6 +8,5 @@ class CreateRelationships < ActiveRecord::Migration
     end
     add_index :relationships, :item_id
     add_index :relationships, :category_id
-    add_index :relationships, [:item_id, :category_id], unique: true
   end
 end

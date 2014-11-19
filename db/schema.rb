@@ -46,7 +46,6 @@ ActiveRecord::Schema.define(version: 20141118174014) do
   end
 
   add_index "relationships", ["category_id"], name: "index_relationships_on_category_id"
-  add_index "relationships", ["item_id", "category_id"], name: "index_relationships_on_item_id_and_category_id", unique: true
   add_index "relationships", ["item_id"], name: "index_relationships_on_item_id"
 
 end
